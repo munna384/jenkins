@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage("file cheack"){
+        steps{
+            sh "ls -la"
+            }
+        }
+        stage("jenkin version"){
+            steps{
+                sh "jenkins --version"
+            }
+        }
+    }
+}
